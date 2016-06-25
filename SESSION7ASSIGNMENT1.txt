@@ -1,0 +1,15 @@
+Ans--1)A helper class to manage database creation and version management.
+
+You create a subclass implementing onCreate(SQLiteDatabase), onUpgrade(SQLiteDatabase, int, int) 
+and optionally onOpen(SQLiteDatabase), and this class takes care of opening the database if it exists,
+ creating it if it does not, and upgrading it as necessary.
+---------------------------------------------------------------------------
+ANS--2)The use of Upgrade method is--
+void onUpgrade (SQLiteDatabase db, 
+                int oldVersion, 
+                int newVersion)
+Called when the database needs to be upgraded. The implementation should use this method to drop tables, 
+add tables, or do anything else it needs to upgrade to the new schema version.
+------------------------------------------------------------------------------
+ANS--3)select * from tablename;
+-----------------------------------------------------
